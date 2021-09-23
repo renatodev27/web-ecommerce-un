@@ -193,14 +193,31 @@
             </div>
             <div class="row mt-3">
                 <div class="col-md-4" v-for="prod in products">
-                    <div class="card">
+                    <div class="e-product-card">
                         <div class="card-body text-center">
                             <img :src="prod.principal_dir" class="img-card-product">
                             <h6 class="fw-bold mb-0 mt-3" v-text="prod.product_name"></h6>
-                            <h6 class="mb-0">
-                                <span v-text="(prod.sec_price > 0) ? '$' + prod.sec_price : '$' + prod.frs_price"></span>
-                                <span v-if="prod.sec_price > 0" v-text="'$' + prod.frs_price" class="ms-2"></span>
+                            <h6 class="mb-0 mt-3 mb-2">
+                                <label v-text="(prod.sec_price > 0) ? '$' + (prod.sec_price).toFixed(2) : '$' + (prod.frs_price).toFixed(2)" class="e-price frst"></label>
+                                <label v-if="prod.sec_price > 0" v-text="'$' + (prod.frs_price).toFixed(2)" class="ms-2 e-price scnd"></label>
                             </h6>
+                            
+                            <div class="hidden-content mt-4 mb-2">
+                                <button class="e-add-cart-button" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="25" height="20" viewBox="0 0 27 27" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <circle cx="6" cy="19" r="2" />
+                                        <circle cx="17" cy="19" r="2" />
+                                        <path d="M17 17h-11v-14h-2" />
+                                        <path d="M6 5l14 1l-1 7h-13" />
+                                    </svg>
+                                    ADD TO CART
+                                </button>
+                                <div class="e-add-wishlist">
+                                    <i class="far fa-heart fs-5 no-hover"></i>
+                                    <i class="fas fa-heart fs-5 on-hover"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
