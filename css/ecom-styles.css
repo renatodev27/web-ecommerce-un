@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
 
 body {
   background-color: #f9f9fd;
+  font-family: "Baloo Paaji 2", cursive;
 }
 
 .e-commerce-content .e-upper-navbar {
@@ -89,6 +91,48 @@ body {
   outline: none;
   border: none;
   box-shadow: none;
+}
+.e-commerce-content .e-main-content {
+  display: flex;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-gadgets {
+  padding: 30px 40px 30px 30px;
+  margin: 10px;
+  background-color: #ff3131;
+  box-shadow: 2px 2px 10px -3px #fd0000;
+  color: #fff;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-gadgets .e-gadget-nav {
+  list-style: none;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-gadgets .e-gadget-nav a {
+  display: block;
+  text-decoration: none;
+  color: #e9e9e9;
+  padding: 10px 0 0 0;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-gadgets .e-gadget-nav a .e-gadges-cant {
+  padding-left: 40px;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-gadgets .e-gadget-nav a:hover {
+  transition: all 0.3s;
+  color: #fff;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-brands {
+  padding: 30px 40px 30px 30px;
+}
+.e-commerce-content .e-main-content .e-side-navbar .e-brands .e-brand-nav {
+  list-style: none;
+}
+.e-commerce-content .e-main-content .e-mright-content {
+  margin: 15px;
+  width: 100%;
+}
+.e-commerce-content .e-main-content .e-mright-content .img-card-product {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*# sourceMappingURL=ecom-styles.css.map */

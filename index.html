@@ -58,9 +58,155 @@
             </div>
         </header>
         <section class="">
-
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb m-2 mb-0 mt-3 pt-2">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+            <div class="e-main-content">
+                <side-navbar></side-navbar>
+                <m-right-content></m-right-content>
+            </div>
         </section>
     </div>
+
+    <template id="side-navbar-template">
+        <div class="e-side-navbar">
+            <div class="e-gadgets">
+                <h5>GADGETS</h5>
+                <ul class="e-gadget-nav mt-3">
+                    <li> 
+                        <a href="#"> 
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">Hard Disks</td>
+                                    <td width="100%"><span class="ms-5">26</span></td>
+                                </tr>
+                            </table> 
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">Keyboards</td>
+                                    <td width="100%"><span class="ms-5">128</span></td>
+                                </tr>
+                            </table> 
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">Laptops</td>
+                                    <td width="100%"><span class="ms-5">42</span></td>
+                                </tr>
+                            </table> 
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">Mobiles</td>
+                                    <td width="100%"><span class="ms-5">67</span></td>
+                                </tr>
+                            </table> 
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">Monitors</td>
+                                    <td width="100%"><span class="ms-5">24</span></td>
+                                </tr>
+                            </table> 
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">Mouses</td>
+                                    <td width="100%"><span class="ms-5">78</span></td>
+                                </tr>
+                            </table> 
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <table class="table-sm table-borderless">
+                                <tr>
+                                    <td width="100%">USB Drivers</td>
+                                    <td width="100%"><span class="ms-5">80</span></td>
+                                </tr>
+                            </table> 
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="e-brands">
+                <h5>BRANDS</h5>
+                <div class="e-brand-nav">
+                    <li>
+                        <div class="form-check pt-2 pb-2 ms-2">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label>Asus</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check pt-2 pb-2 ms-2">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label>Panasonic</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check pt-2 pb-2 ms-2">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label>Lenovo</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check pt-2 pb-2 ms-2">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label>Samsung</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check pt-2 pb-2 ms-2">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label>LG</label>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="mright-content-template">
+        <div class="e-mright-content">
+            <div class="title d-flex">
+                <h1>Products</h1> <h5 class="smallm pt-2 mt-2 ms-4 text-muted">(1504)</h5>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4" v-for="prod in products">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img :src="prod.principal_dir" class="img-card-product">
+                            <h6 class="fw-bold mb-0 mt-3" v-text="prod.product_name"></h6>
+                            <h6 class="mb-0">
+                                <span v-text="(prod.sec_price > 0) ? '$' + prod.sec_price : '$' + prod.frs_price"></span>
+                                <span v-if="prod.sec_price > 0" v-text="'$' + prod.frs_price" class="ms-2"></span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
 
     <script src="js/vue.js"></script>
     <script src="js/app.js"></script>

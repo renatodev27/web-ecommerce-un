@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 body {
     background-color: rgb(249, 249, 253);
+    font-family: 'Baloo Paaji 2', cursive;
 }
 
 .e-commerce-content {
@@ -102,6 +105,61 @@ body {
                     border: none;
                     box-shadow: none;
                 }
+            }
+        }
+    }
+
+    .e-main-content {
+        display: flex;
+
+        .e-side-navbar {
+
+            .e-gadgets {
+                padding: 30px 40px 30px 30px;
+                margin: 10px;
+                background-color: #ff3131;
+                box-shadow: 2px 2px 10px -3px #fd0000;
+                color: #fff;
+                
+                .e-gadget-nav {
+                    list-style: none;
+
+                    a { 
+                        display: block;
+                        text-decoration: none;
+                        color: rgb(233, 233, 233);
+                        padding: 10px 0 0 0;
+
+                        .e-gadges-cant {
+                            padding-left: 40px;
+                        }
+
+                        &:hover {
+                            transition: all .3s;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .e-brands {
+                padding: 30px 40px 30px 30px;
+
+                .e-brand-nav {
+                    list-style: none;
+                }
+            }
+        }
+
+        .e-mright-content {
+            margin: 15px;
+            width: 100%;
+
+            .img-card-product {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                object-position: center;
             }
         }
     }
