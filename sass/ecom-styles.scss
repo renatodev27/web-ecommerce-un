@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(249, 249, 253);
+}
+
+.e-commerce-content {
+
+    .e-upper-navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+
+        .e-nav-left-side, .e-nav-right-side {
+            display: flex;
+            list-style: none;
+            
+            a {
+                display: block;
+                padding: 15px;
+                color: rgb(109, 109, 109);
+                text-decoration: none;
+
+                &.on {
+                    background-color: rgb(255, 37, 55);
+                    font-weight: bold;
+                    color: rgb(247, 247, 247);
+                    box-shadow: 0 0 5px 0 rgb(255, 147, 147);
+                }
+            }
+        }
+    }
+
+    .e-lower-navbar {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        box-shadow: 0 3px 7px -4px #d3d3d3;
+        background-color: #fff;
+
+        & > li {
+            border: 1px solid rgb(231, 231, 231);
+            width: 100%;
+            text-align: center;
+
+            &.e-img-logo {
+                width: 16%;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 80px;
+                    height: 80px;
+                    padding: 15px;
+                }
+            }
+
+            .e-lower-nav-options {
+                display: flex;
+                list-style: none;
+                margin-top: 6px;
+
+                a {
+                    color: #242424;
+                    font-weight: 600;
+                }
+            }
+
+            a {
+                display: block;
+                padding: 15px;
+                margin-top: 10px;
+                text-decoration: none;
+            }
+
+            &.e-shopping-cart {
+                width:20%;
+                color: #8d8d8d;
+                cursor: pointer;
+            }
+
+            .input-group-text {
+                background-color: #fff;
+                border: 0;
+                padding: 0 5px 0 25px;
+                margin-bottom: 0;
+                color: #8d8d8d;
+
+                i { font-size: 1.5rem; }
+            }
+
+            input {
+                border: 0;
+                padding: 31px 25px 31px 5px;
+
+                &:focus {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9fd;
+}
+
+.e-commerce-content .e-upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.e-commerce-content .e-upper-navbar .e-nav-left-side, .e-commerce-content .e-upper-navbar .e-nav-right-side {
+  display: flex;
+  list-style: none;
+}
+.e-commerce-content .e-upper-navbar .e-nav-left-side a, .e-commerce-content .e-upper-navbar .e-nav-right-side a {
+  display: block;
+  padding: 15px;
+  color: #6d6d6d;
+  text-decoration: none;
+}
+.e-commerce-content .e-upper-navbar .e-nav-left-side a.on, .e-commerce-content .e-upper-navbar .e-nav-right-side a.on {
+  background-color: #ff2537;
+  font-weight: bold;
+  color: #f7f7f7;
+  box-shadow: 0 0 5px 0 #ff9393;
+}
+.e-commerce-content .e-lower-navbar {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 3px 7px -4px #d3d3d3;
+  background-color: #fff;
+}
+.e-commerce-content .e-lower-navbar > li {
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  text-align: center;
+}
+.e-commerce-content .e-lower-navbar > li.e-img-logo {
+  width: 16%;
+}
+.e-commerce-content .e-lower-navbar > li.e-img-logo img {
+  object-fit: cover;
+  object-position: center;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+}
+.e-commerce-content .e-lower-navbar > li .e-lower-nav-options {
+  display: flex;
+  list-style: none;
+  margin-top: 6px;
+}
+.e-commerce-content .e-lower-navbar > li .e-lower-nav-options a {
+  color: #242424;
+  font-weight: 600;
+}
+.e-commerce-content .e-lower-navbar > li a {
+  display: block;
+  padding: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.e-commerce-content .e-lower-navbar > li.e-shopping-cart {
+  width: 20%;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+.e-commerce-content .e-lower-navbar > li .input-group-text {
+  background-color: #fff;
+  border: 0;
+  padding: 0 5px 0 25px;
+  margin-bottom: 0;
+  color: #8d8d8d;
+}
+.e-commerce-content .e-lower-navbar > li .input-group-text i {
+  font-size: 1.5rem;
+}
+.e-commerce-content .e-lower-navbar > li input {
+  border: 0;
+  padding: 31px 25px 31px 5px;
+}
+.e-commerce-content .e-lower-navbar > li input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=ecom-styles.css.map */
