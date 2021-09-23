@@ -75,7 +75,7 @@
         <div class="e-side-navbar">
             <div class="e-gadgets">
                 <h5>GADGETS</h5>
-                <ul class="e-gadget-nav mt-3">
+                <div class="e-gadget-nav mt-3">
                     <li> 
                         <a href="#"> 
                             <table class="table-sm table-borderless">
@@ -141,12 +141,12 @@
                             <table class="table-sm table-borderless">
                                 <tr>
                                     <td width="100%">USB Drivers</td>
-                                    <td width="100%"><span class="ms-5">80</span></td>
+                                    <td width="100%"><span>80</span></td>
                                 </tr>
                             </table> 
                         </a> 
                     </li>
-                </ul>
+                </div>
             </div>
             <div class="e-brands">
                 <h5>BRANDS</h5>
@@ -187,12 +187,12 @@
     </template>
 
     <template id="mright-content-template">
-        <div class="e-mright-content">
+        <div class="e-mright-content container-fluid">
             <div class="title d-flex">
                 <h1>Products</h1> <h5 class="smallm pt-2 mt-2 ms-4 text-muted">(1504)</h5>
             </div>
-            <div class="row mt-3">
-                <div class="col-md-4" v-for="prod in products">
+            <div class="row g-2 mt-3">
+                <div class="col-md-4 mb-2" v-for="prod in products">
                     <div class="e-product-card">
                         <div class="card-body text-center">
                             <img :src="prod.principal_dir" class="img-card-product">
@@ -222,6 +222,7 @@
                     </div>
                 </div>
             </div>
+            <br><br>
         </div>
     </template>
 
