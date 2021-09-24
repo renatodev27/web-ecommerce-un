@@ -112,6 +112,9 @@ body {
 .e-commerce-content .e-main-content {
   display: flex;
 }
+.e-commerce-content .e-main-content .e-side-navbar {
+  width: 23%;
+}
 .e-commerce-content .e-main-content .e-side-navbar .e-gadgets {
   padding: 30px 40px 30px 30px;
   margin: 10px;
@@ -137,12 +140,15 @@ body {
 }
 .e-commerce-content .e-main-content .e-side-navbar .e-brands {
   padding: 30px 40px 30px 30px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px -6px #cacaca;
 }
 .e-commerce-content .e-main-content .e-side-navbar .e-brands .e-brand-nav {
   list-style: none;
 }
 .e-commerce-content .e-main-content .e-mright-content {
-  width: 100%;
+  width: 90%;
 }
 .e-commerce-content .e-main-content .e-mright-content .e-product-card {
   background-color: #fff;
@@ -153,7 +159,7 @@ body {
 .e-commerce-content .e-main-content .e-mright-content .e-product-card:hover {
   position: absolute;
   transform: scale(1.04);
-  width: 26.6%;
+  width: 25.7%;
   box-shadow: 2px 0 30px -10px #c4c4c4;
   transition: all 0.4s;
 }

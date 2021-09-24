@@ -76,109 +76,25 @@
             <div class="e-gadgets">
                 <h5>GADGETS</h5>
                 <div class="e-gadget-nav mt-3">
-                    <li> 
+                    <li v-for="gadg in gadgetList"> 
                         <a href="#"> 
                             <table class="table-sm table-borderless">
                                 <tr>
-                                    <td width="100%">Hard Disks</td>
-                                    <td width="100%"><span class="ms-5">26</span></td>
+                                    <td width="100%" v-text="gadg.description"></td>
+                                    <td width="100%"><span class="ms-5" v-text="gadg.qty"></span></td>
                                 </tr>
                             </table> 
                         </a>
-                    </li>
-                    <li> 
-                        <a href="#">
-                            <table class="table-sm table-borderless">
-                                <tr>
-                                    <td width="100%">Keyboards</td>
-                                    <td width="100%"><span class="ms-5">128</span></td>
-                                </tr>
-                            </table> 
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="#">
-                            <table class="table-sm table-borderless">
-                                <tr>
-                                    <td width="100%">Laptops</td>
-                                    <td width="100%"><span class="ms-5">42</span></td>
-                                </tr>
-                            </table> 
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="#">
-                            <table class="table-sm table-borderless">
-                                <tr>
-                                    <td width="100%">Mobiles</td>
-                                    <td width="100%"><span class="ms-5">67</span></td>
-                                </tr>
-                            </table> 
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="#">
-                            <table class="table-sm table-borderless">
-                                <tr>
-                                    <td width="100%">Monitors</td>
-                                    <td width="100%"><span class="ms-5">24</span></td>
-                                </tr>
-                            </table> 
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="#">
-                            <table class="table-sm table-borderless">
-                                <tr>
-                                    <td width="100%">Mouses</td>
-                                    <td width="100%"><span class="ms-5">78</span></td>
-                                </tr>
-                            </table> 
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="#">
-                            <table class="table-sm table-borderless">
-                                <tr>
-                                    <td width="100%">USB Drivers</td>
-                                    <td width="100%"><span>80</span></td>
-                                </tr>
-                            </table> 
-                        </a> 
                     </li>
                 </div>
             </div>
             <div class="e-brands">
                 <h5>BRANDS</h5>
                 <div class="e-brand-nav">
-                    <li>
+                    <li v-for="brand in brandList">
                         <div class="form-check pt-2 pb-2 ms-2">
                             <input class="form-check-input" type="checkbox" value="">
-                            <label>Asus</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-check pt-2 pb-2 ms-2">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label>Panasonic</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-check pt-2 pb-2 ms-2">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label>Lenovo</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-check pt-2 pb-2 ms-2">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label>Samsung</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-check pt-2 pb-2 ms-2">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label>LG</label>
+                            <label v-text="brand.descr"></label>
                         </div>
                     </li>
                 </div>
@@ -192,7 +108,7 @@
                 <h1>Products</h1> <h5 class="smallm pt-2 mt-2 ms-4 text-muted">(1504)</h5>
             </div>
             <div class="row g-2 mt-3">
-                <div class="col-md-4 mb-2" v-for="prod in products">
+                <div class="col-md-4 mb-1" v-for="prod in products">
                     <div class="e-product-card">
                         <div class="card-body text-center">
                             <img :src="prod.principal_dir" class="img-card-product">
@@ -222,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <br><br>
+            <br><br><br><br>
         </div>
     </template>
 
