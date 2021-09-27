@@ -38,4 +38,4 @@ git clone https://github.com/renatodev27/web-ecommerce-un.git
 
 Renato Ramos Paretto - renatoramos.devops@gmail.com - rantopthetop93@gmail.com
 
-Project Link : https://github.com/renatodev27/pokedex.git
+Project Link : https://github.com/renatodev27/web-ecommerce-un.git
