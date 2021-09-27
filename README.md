@@ -15,7 +15,7 @@
 </details>
 
 ## About the Project
-This project is a demo of an ecommerce web, show the design, menus, brands, gadgets, also includes a list of items and animations when interact with it.
+This project is a demo of an ecommerce web, show the design, menus, brands, gadgets, also includes a list of items and animations when interact with them.
 
 ## Built With
 - Html5
